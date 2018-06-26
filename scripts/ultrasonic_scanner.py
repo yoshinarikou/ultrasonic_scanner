@@ -13,7 +13,7 @@ class UltrasonicScanner():
 
         self.rate = 1.0
 
-        self.ser = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
+        self.ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
         self.direction = 1.0
 
     def handleScanner(self):
